@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter first digit = ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second digit = ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            int sum = x + y;
+            Console.Write("Sum = "+sum);
+            Console.ReadLine();
+        }
+    }
+}
