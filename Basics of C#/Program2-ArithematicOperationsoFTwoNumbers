@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter first digit = ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second digit = ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Press 1 for Addition, 2 for Subtraction, 3 for division, 4 for multiplication : ");
+            int z = Convert.ToInt32(Console.ReadLine());
+            if (z == 1)
+            {
+                int sum = x + y;
+                Console.Write("Sum = " + sum);
+            }
+            else if (z == 2)
+            {
+                int sub = x - y;
+                Console.Write("Subtraction = " + sub);
+            }
+            else if (z == 3)
+            {
+                float div = x / y;
+                Console.Write("Division = " + div);
+            }
+            else if (z == 4)
+            {
+                int multi = x * y;
+                Console.Write("Multiplication = " + multi);
+            }
+            else
+            {
+                Console.Write("Undefined Choice");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
