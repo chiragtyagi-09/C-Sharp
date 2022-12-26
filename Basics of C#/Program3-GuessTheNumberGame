@@ -1,0 +1,32 @@
+using System;
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int firstNumber = 2;
+            int secondNumber = 5;
+            var subtraction = 7;
+
+            int answer;
+
+            string prompt = ". Press enter when ready";
+
+            Console.WriteLine("Think of number between 1 to 10" + prompt);
+            Console.ReadKey();
+            Console.WriteLine("Multiply your number by " + firstNumber + prompt);
+            Console.ReadKey();
+            Console.WriteLine("Now multiply the result by " + secondNumber + prompt);
+            Console.ReadKey();
+            Console.WriteLine("Divide the result by number you originally thought of" + prompt);
+            Console.ReadKey();
+            Console.WriteLine("Now subtract " + subtraction + prompt);
+            Console.ReadKey();
+
+            answer = firstNumber * secondNumber - subtraction;
+            Console.WriteLine("The answer is " + answer);
+        }
+    }
+}
