@@ -6,9 +6,12 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            int firstNumber = 2;
-            int secondNumber = 5;
-            var subtraction = 7;
+
+            Random randomNumber = new Random();
+
+            int firstNumber = randomNumber.Next(2,10);
+            int secondNumber = randomNumber.Next(2, 10);
+            var subtraction = randomNumber.Next(2, 10);
 
             int answer;
 
